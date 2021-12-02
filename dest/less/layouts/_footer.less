@@ -1,0 +1,111 @@
+.footer{
+    height: 80px;
+    background: #3D4050;
+
+    @media screen and (max-width: @media_tablet) {
+        height: 60px;
+    }
+    @media screen and (max-width: @media_mobile) {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    &__inner{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: @media_mobile) {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+    }
+    &__block{
+        position: relative;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+
+        span, a, div{
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            font-family: @font_Regular;
+            font-size: 13px;
+            line-height: 16px;
+            color: @white;
+            text-decoration: none;
+
+            @media screen and (max-width: @media_desctop) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+        a:hover{
+            color: #43abf0;
+        }
+        div{
+            color: #C3C3C3;
+        }
+        & > div + div, & > a + a{
+            margin-left: 38px;
+
+            @media screen and (max-width: @media_desctop) {
+                margin-left: 15px;
+            }
+        }
+        i{
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+            display: block;
+            margin-right: 10px;
+            margin-bottom: 5px;
+
+            @media screen and (max-width: @media_mobile) {
+                margin-bottom: 2px;
+            }
+        }
+
+    }
+    &__block + &__block{
+        margin-left: 40px;
+        padding-left: 40px;
+
+        @media screen and (max-width: @media_desctop) {
+            margin-left: 15px;
+            padding-left: 15px;
+        }
+        @media screen and (max-width: @media_tablet) {
+            padding-left: 0;
+            margin-left: 20px;
+        }
+        @media screen and (max-width: @media_mobile) {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+
+        &::before{
+            content: '';
+            width: 1px;
+            height: 18px;
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            transform: translateY(-50%);
+            display: block;
+            background: #C3C3C3;
+
+            @media screen and (max-width: @media_tablet) {
+                display: none;
+            }
+        }
+    }
+    &__link{
+        @media screen and (max-width: @media_tablet) {
+            display: none;
+        }
+    }
+
+}

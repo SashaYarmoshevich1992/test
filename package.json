@@ -1,0 +1,26 @@
+{
+  "name": "OneDuck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1",
+    "less": "^3.11.3",
+    "less-plugin-autoprefix": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-uglify-es": "latest",
+    "gulp-concat": "latest",
+    "gulp-rename": "latest",
+    "gulp-less": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-watch": "latest",
+    "gulp-autoprefixer": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sasha_y92@mail.ru",
+  "license": "ISC"
+}
